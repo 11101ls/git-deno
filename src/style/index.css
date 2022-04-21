@@ -1,0 +1,63 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: bold 20px "Courire";
+}
+
+/* 主窗口 */
+#main {
+  width: 360px;
+  height: 420px;
+  background-color: #b7a;
+  margin: 100px auto;
+  border: 10px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#main #stage {
+  width: 304px;
+  height: 304px;
+  border: 2px solid black;
+  position: relative;
+}
+
+#main #score-panel {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#snake > div {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border: 1px solid #b7a;
+  position: absolute;
+}
+
+#food {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-flow: row wrap;
+}
+
+#food > div {
+  width: 4px;
+  height: 4px;
+  background-color: #a12f2f;
+  transform: rotate(45deg);
+}
